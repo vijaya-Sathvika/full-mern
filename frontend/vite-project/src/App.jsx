@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
-import MainContent from './MainContent';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import header from './header';
+import maincontent from './maincontent';
+import navbar from './navbar';
+import footer from './footer';
 import './App.css';
 
 const App = () => {
