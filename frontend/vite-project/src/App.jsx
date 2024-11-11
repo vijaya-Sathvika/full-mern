@@ -12,11 +12,10 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const apiUrl = process.env.REACT_APP_API_URL;
   // Function to check if the user is authenticated (you can use session or a JWT token for this)
   const checkAuthentication = async () => {
     try {
-      const response = await fetch('/api/check-auth'); // Create this API endpoint in your backend
+      const response = await fetch('https://full-mern-backend.onrender.com/api/check-auth'); // Create this API endpoint in your backend // Create this API endpoint in your backend
       if (response.ok) {
         setIsAuthenticated(true);
       } else {
